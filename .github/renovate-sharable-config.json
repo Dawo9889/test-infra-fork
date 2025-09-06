@@ -43,7 +43,7 @@
       "enabled": false
     },
     {
-      "matchManagers": ["gomod"],
+      "matchDatasources": ["go"],
       "matchUpdateTypes": ["patch", "minor"],
       "groupName": "go modules (non-major)",
       "postUpdateOptions": [
@@ -52,7 +52,7 @@
       ]
     },
     {
-      "matchManagers": ["gomod"],
+      "matchDatasources": ["go"],
       "matchUpdateTypes": ["major"],
       "groupName": "go modules (major)",
       "postUpdateOptions": [
