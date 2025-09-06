@@ -52,9 +52,23 @@
       ]
     },
     {
-    "matchManagers": ["pip_requirements"],
-    "matchUpdateTypes": ["patch", "minor"],
-    "groupName": "python deps (non-major)"
+      "matchDatasources": ["go"],
+      "matchUpdateTypes": ["major"],
+      "groupName": "go modules (major)",
+      "postUpdateOptions": [
+        "gomodTidy",
+        "gomodUpdateImportPaths"
+      ]
+    },
+    {
+      "matchManagers": ["pip_requirements"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "groupName": "python deps (non-major)"
+    },
+    {
+      "matchManagers": ["pip_requirements"],
+      "matchUpdateTypes": ["major"],
+      "groupName": "python deps (major)"
     },
     {
       "matchDatasources": ["docker"],
@@ -63,13 +77,26 @@
     {
       "matchManagers": ["regex"],
       "matchDatasources": ["docker"],
+      "matchDepNames": ["europe-docker.pkg.dev/kyma-project/prod/*"],
       "versioning": "loose",
-      "groupName": "our docker images",
-      "commitMessageExtra": "to the latest version"
+      "groupName": "our docker images (prod)"
+    },
+    {
+      "matchManagers": ["regex"],
+      "matchDatasources": ["docker"],
+      "matchDepNames": ["europe-docker.pkg.dev/kyma-project/dev/*"],
+      "versioning": "loose",
+      "groupName": "our docker images (dev)"
     },
     {
       "matchDatasources": ["terraform-provider"],
-      "groupName": "terraform providers"
+      "matchUpdateTypes": ["patch", "minor"],
+      "groupName": "terraform providers (non-major)"
+    },
+    {
+      "matchDatasources": ["terraform-provider"],
+      "matchUpdateTypes": ["major"],
+      "groupName": "terraform providers (major)"
     }
   ],
 
