@@ -78,7 +78,8 @@
       "matchManagers": ["regex"],
       "matchDatasources": ["docker"],
       "versioning": "loose",
-      "groupName": "our docker images "
+      "groupName": "our docker images",
+      "commitMessageExtra": ""
     },
     {
       "matchDatasources": ["terraform-provider"],
