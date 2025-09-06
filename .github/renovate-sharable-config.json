@@ -77,16 +77,8 @@
     {
       "matchManagers": ["regex"],
       "matchDatasources": ["docker"],
-      "matchDepNames": ["europe-docker.pkg.dev/kyma-project/prod/*"],
       "versioning": "loose",
-      "groupName": "our docker images (prod)"
-    },
-    {
-      "matchManagers": ["regex"],
-      "matchDatasources": ["docker"],
-      "matchDepNames": ["europe-docker.pkg.dev/kyma-project/dev/*"],
-      "versioning": "loose",
-      "groupName": "our docker images (dev)"
+      "groupName": "our docker images "
     },
     {
       "matchDatasources": ["terraform-provider"],
