@@ -74,6 +74,7 @@
       "matchDatasources": ["docker"],
       "versioning": "loose",
       "groupName": "our docker images"
+      "commitMessageTopic": "{{depName}}"
     }
   ],
 
