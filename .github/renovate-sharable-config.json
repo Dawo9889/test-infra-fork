@@ -73,8 +73,8 @@
       "matchManagers": ["regex"],
       "matchDatasources": ["docker"],
       "versioning": "loose",
-      "groupName": "our docker images"
-      "commitMessageTopic": "{{depName}}"
+      "groupName": "our docker images",
+      "commitMessageExtra": ""
     }
   ],
 
