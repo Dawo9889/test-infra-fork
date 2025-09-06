@@ -46,6 +46,7 @@
       "matchDatasources": ["go"],
       "matchUpdateTypes": ["patch", "minor"],
       "groupName": "go modules (non-major)",
+      "commitMessageExtra": "the latest version",
       "postUpdateOptions": [
         "gomodTidy",
         "gomodUpdateImportPaths"
@@ -55,6 +56,7 @@
       "matchDatasources": ["go"],
       "matchUpdateTypes": ["major"],
       "groupName": "go modules (major)",
+      "commitMessageExtra": "the latest version",
       "postUpdateOptions": [
         "gomodTidy",
         "gomodUpdateImportPaths"
@@ -79,7 +81,7 @@
       "matchDatasources": ["docker"],
       "versioning": "loose",
       "groupName": "our docker images",
-      "commitMessageExtra": ""
+      "commitMessageExtra": "the latest version"
     },
     {
       "matchDatasources": ["terraform-provider"],
