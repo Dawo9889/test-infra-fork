@@ -66,6 +66,11 @@
       "versioning": "loose",
       "groupName": "our docker images",
       "commitMessageExtra": "to the latest version"
+    },
+    {
+      "matchDatasources": ["terraform-provider"],
+      "groupName": "terraform providers",
+      "commitMessageExtra": "grouped terraform provider updates"
     }
   ],
 
