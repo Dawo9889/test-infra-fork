@@ -52,15 +52,6 @@
       ]
     },
     {
-      "matchDatasources": ["go"],
-      "matchUpdateTypes": ["major"],
-      "groupName": "go modules (major)",
-      "postUpdateOptions": [
-        "gomodTidy",
-        "gomodUpdateImportPaths"
-      ]
-    },
-    {
     "matchManagers": ["pip_requirements"],
     "matchUpdateTypes": ["patch", "minor"],
     "groupName": "python deps (non-major)"
@@ -74,7 +65,7 @@
       "matchDatasources": ["docker"],
       "versioning": "loose",
       "groupName": "our docker images",
-      "commitMessageExtra": ""
+      "commitMessageExtra": "to the latest version"
     }
   ],
 
