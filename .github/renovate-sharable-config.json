@@ -74,8 +74,6 @@
       "matchDatasources": ["docker"],
       "versioning": "loose",
       "groupName": "our docker images"
-      "commitMessageTopic": "update images",
-      "commitMessageExtra": "({{depCount}} updates)"
     }
   ],
 
