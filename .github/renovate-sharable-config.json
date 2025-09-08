@@ -67,7 +67,13 @@
     },
     {
       "matchDatasources": ["docker"],
-      "versioning": "loose"
+      "versioning": "loose",
+      "groupName": "docker images"
+    },
+    {
+      "matchManagers": ["regex"],
+      "matchDatasources": ["docker"],
+      "groupName": "our docker images"
     }
   ],
 
