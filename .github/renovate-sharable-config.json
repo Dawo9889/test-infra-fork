@@ -51,15 +51,15 @@
       "groupName": "terraform providers"
     },
     {
+      "matchDatasources": ["docker"],
+      "groupName": "docker images"
+    },
+    {
       "matchManagers": ["regex"],
       "groupName": "custom docker images",
       "datasources": ["docker"],
       "versioning": "loose",
       "commitMessageExtra": "to the newest version"
-    },
-    {
-      "matchDatasources": ["docker"],
-      "groupName": "docker images"
     }
   ],
 
