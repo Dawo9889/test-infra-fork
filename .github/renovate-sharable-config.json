@@ -43,31 +43,18 @@
       "enabled": false
     },
     {
-      "matchManagers": ["gomod"],
-      "matchUpdateTypes": ["patch", "minor"],
-      "groupName": "go modules (non-major)",
-      "postUpdateOptions": [
-        "gomodTidy",
-        "gomodUpdateImportPaths"
-      ]
-    },
-    {
-      "matchManagers": ["gomod"],
-      "matchUpdateTypes": ["major"],
-      "groupName": "go modules (major)",
-      "postUpdateOptions": [
-        "gomodTidy",
-        "gomodUpdateImportPaths"
-      ]
-    },
-    {
     "matchManagers": ["pip_requirements"],
-    "matchUpdateTypes": ["patch", "minor"],
-    "groupName": "python deps (non-major)"
+    "groupName": "python dependencies"
+    },
+    {
+      "matchManagers": ["regex"],
+      "groupName": "custom docker images",
+      "datasources": ["docker"],
+      "versioning": "loose"
     },
     {
       "matchDatasources": ["docker"],
-      "versioning": "loose"
+      "groupName": "docker images"
     }
   ],
 
