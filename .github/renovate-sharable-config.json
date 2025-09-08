@@ -54,7 +54,8 @@
     },
     {
       "matchDatasources": ["docker"],
-      "groupName": "docker images"
+      "groupName": "docker images",
+      "commitMessageExtra": "to the newest version"
     }
   ],
 
