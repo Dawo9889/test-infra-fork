@@ -43,19 +43,23 @@
       "enabled": false
     },
     {
-    "matchManagers": ["pip_requirements"],
-    "groupName": "python dependencies"
+      "matchManagers": ["pip_requirements"],
+      "groupName": "python dependencies"
+    },
+    {
+      "matchDatasources": ["terraform-provider"],
+      "groupName": "terraform providers"
     },
     {
       "matchManagers": ["regex"],
       "groupName": "custom docker images",
       "datasources": ["docker"],
-      "versioning": "loose"
+      "versioning": "loose",
+      "commitMessageExtra": "to the newest version"
     },
     {
       "matchDatasources": ["docker"],
-      "groupName": "docker images",
-      "commitMessageExtra": "to the newest version"
+      "groupName": "docker images"
     }
   ],
 
