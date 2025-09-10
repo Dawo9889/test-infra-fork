@@ -12,20 +12,8 @@
 
   "packageRules": [
     {
-      "matchDatasources": ["npm"],
-      "minimumReleaseAge": "3 days"
-    },
-    {
-      "matchManagers": ["npm"],
-      "matchDepTypes": ["dependencies"],
-      "matchUpdateTypes": ["patch", "minor"],
-      "groupName": "dependencies (non-major)"
-    },
-    {
-      "matchManagers": ["npm"],
-      "matchDepTypes": ["devDependencies"],
-      "matchUpdateTypes": ["patch", "minor"],
-      "groupName": "devDependencies (non-major)"
+      "matchManagers": ["gomod"],
+      "groupName": "All Go dependencies"
     },
     {
       "matchManagers": ["github-actions"],
